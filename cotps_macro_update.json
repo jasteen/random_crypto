@@ -1,0 +1,243 @@
+{
+  "Name": "cotps_macro",
+  "CreationDate": "2022-5-4",
+  "Commands": [
+    {
+      "Command": "label",
+      "Target": "START",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "open",
+      "Target": "https://cotps.com/#/pages/transaction/transaction",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "refresh",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[3]/uni-view[2]/uni-view[2]",
+      "Value": "wallet_balance",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "KEEP_LOOP",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "if_v2",
+      "Target": "${wallet_balance} >10.00",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[4]/uni-button",
+      "Value": "",
+      "Targets": [
+        "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[4]/uni-button",
+        "xpath=//uni-button[@type='primary']",
+        "xpath=//uni-button",
+        "css=body > uni-app > uni-page > uni-page-wrapper > uni-page-body > uni-view > uni-view.grab-orders-wrap.grab-orders-wrap1 > uni-button"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "waitForElementVisible",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[7]/uni-view/uni-view/uni-view[6]/uni-button[2]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[7]/uni-view/uni-view/uni-view[6]/uni-button[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[7]/uni-view/uni-view/uni-view[6]/uni-button[2]",
+        "xpath=//uni-button[2]",
+        "css=body > uni-app > uni-page > uni-page-wrapper > uni-page-body > uni-view > uni-view.fui-dialog__wrap.fui-wrap__show > uni-view > uni-view > uni-view.buttons > uni-button:nth-child(2)"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "waitForElementVisible",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[8]/uni-view/uni-view/uni-button",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[8]/uni-view/uni-view/uni-button",
+      "Value": "",
+      "Targets": [
+        "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[8]/uni-view/uni-view/uni-button",
+        "xpath=//uni-view[8]/uni-view/uni-view/uni-button",
+        "css=body > uni-app > uni-page > uni-page-wrapper > uni-page-body > uni-view > uni-view.fui-dialog__wrap.fui-wrap__show > uni-view > uni-view > uni-button"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "refresh",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[3]/uni-view[2]/uni-view[2]",
+      "Value": "wallet_balance",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[5]/uni-view[3]/uni-view[4]/uni-image/img",
+      "Value": "",
+      "Targets": [
+        "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[5]/uni-view[3]/uni-view[4]/uni-image/img",
+        "xpath=//uni-view[3]/uni-view[4]/uni-image/img",
+        "css=body > uni-app > uni-page > uni-page-wrapper > uni-page-body > uni-view > uni-view:nth-child(5) > uni-view:nth-child(3) > uni-view.opt > uni-image > img"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[5]/uni-view[3]/uni-view[5]/uni-view/uni-view/uni-text/span",
+      "Value": "!csvLine",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[5]/uni-view[3]/uni-view[5]/uni-view[2]/uni-view/uni-text/span",
+      "Value": "!csvLine",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[5]/uni-view[3]/uni-view[5]/uni-view[3]/uni-view/uni-text/span",
+      "Value": "!csvLine",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[5]/uni-view[3]/uni-view[5]/uni-view[4]/uni-view/uni-text/span",
+      "Value": "!csvLine",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[5]/uni-view[3]/uni-view[5]/uni-view[5]/uni-view/uni-text/span",
+      "Value": "!csvLine",
+      "Description": ""
+    },
+    {
+      "Command": "csvSave",
+      "Target": "test_csv",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoLabel",
+      "Target": "KEEP_LOOP",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "else",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "7200000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "refresh",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[3]/uni-view/uni-view[2]",
+      "Value": "in_transaction",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "SHORT_PAUSES",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "if_v2",
+      "Target": "${in_transaction} == 0",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "gotoLabel",
+      "Target": "START",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "else",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "12000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "refresh",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=/html/body/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view[3]/uni-view/uni-view[2]",
+      "Value": "in_transaction",
+      "Description": ""
+    },
+    {
+      "Command": "gotoLabel",
+      "Target": "SHORT_PAUSES",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}
